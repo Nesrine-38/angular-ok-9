@@ -1,0 +1,19 @@
+<h1>First</h1>
+<p>Hello {{name}}</p>
+<button (click)="changeName()">Click</button>
+<button (click)="toggleDisplay()">Toggle</button>
+
+<div *ngIf="display">
+  <p>Some text</p>
+</div>
+
+<div>
+  {{message}}
+  <input type="text" [(ngModel)]="message">
+</div>
+
+
+<app-with-parma [name]="message" />
+<app-with-parma name="Jean"/>
+<app-with-parma name="Sabri" />
+<app-with-parma name="Ling" />

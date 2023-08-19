@@ -1,0 +1,7 @@
+article h3 {
+  color: green;
+}
+
+article.closed h3{
+  color:red;
+}

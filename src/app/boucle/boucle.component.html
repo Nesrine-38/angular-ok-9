@@ -1,0 +1,12 @@
+<p>boucle works!</p>
+<button (click)="addItem('something')">click</button>
+<ul>
+  <li *ngFor="let item of list">{{item}}</li>
+  <app-counter></app-counter>
+</ul>
+<div>
+  {{message}}
+  <input type="text" [(ngModel)]="message">
+</div>
+
+<!--Déclarations de modèle (event)="statement"-->
